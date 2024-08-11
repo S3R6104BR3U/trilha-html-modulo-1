@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML - Básico</title>
+</head>
+<body>
+	<h1>Primeiros Passos com HTML</h1>
+	<h2>Conhecendo o HTML</h2>
+	<hr>
+	<h3>Apresentação</h3>
+	<p>Será apresentado um pouco da história da Web,
+		Vamos entender os conceitos de Clients, Servers e linguagens de programação
+		Conseitos ecensiais para quem deseja se aventurar no mundo da programação Web
+		ao final deste estudo você entendera sobre um pouco da história do computador,
+		surgimento da internet e compreendera conceitos do funcionamento da Web.
+	</p>
+	<hr>
+	<h3 id="inicio">Índice</h3>
+	<h4>I - Conhecendo o HTML</h4>
+	<ol>
+		<li><a href="#historia">História</a></li>
+		<li><a href="#clients">O que são clients?</a></li>
+		<li><a href="#servers">O que são Servers?</a></li>
+		<li><a href="#linguagens">Linguagens de programação</a></li>
+	</ol>
+	<h4>II - Introdução ao HTML na Prática</h4>
+	<ol>
+		<li><a href="#ferramentas">Ferramentas utilizadas</a></li>
+		<li><a href="#inspetor">Inspetor de elementos</a></li>
+		<li><a href="#estrutura">Estrutura básica do HTML</a></li>
+		<li><a href="#tags">Falando sobre tags</a></li>
+		<li><a href="#atributos">Atributos das tags</a></li>
+		<li><a href="#textos">Textos</a></li>
+		<li><a href="#listas">Listas ordenadas e não ordenadas</a></li>
+		<li><a href="#links">Links</a></li>
+	</ol>
+	<hr>
+	<h3 id="historia">História</h3>
+	<small><a href="#inicio">Voltar</a></small>
+	<h4>Primeiros Computadores</h4>
+	<p>
+		A história da computação é bem extensa considerando-se
+		as primeiras máquinas de calculos mas, vamos partir 
+		do momento do surgimento dos primeiros computadores 
+		eletro mecanicos. Na primeira geração destaca-se os computadores 
+		Mark I 1944 - eletromecanico Colossus 1946 - eletromecanico
+		ENIAC 1946 esses computadores eram enormes ocupavam uma sala inteiro.
+	</p>
+	<h5>Curiosidade</h5>
+	<p>O termo bug surge pelo motivo de insetos serem atraidos para as valvulas utilizadas nos primeiros computadores</p>
+	<h4>A segunda geração 1959 - 1965</h4>
+	<p>
+		com o surgimento dos transitores os computadores
+		diminuiram o tamanho e ganharam mais capaciade.
+	</p>
+	<h5>A quarta geração a partir de 1971</h5>
+	<p>marcada pela consepção do computador pessoal.</p>
+	<h5>Quinta geração</h5>
+	<p>entusiatas consideram estarmos na quinta de geração de computadores com o 
+	surgimento da inteligencia artificial, metaverse, criptomoeda e etc. 
+	</p>
+	<h4>Como Surgiu?</h4>
+	<p>
+		Anteriomente a redes de computadores vale destacar a comunicação por telegrafo
+		onde países já podiam se comunicar a longas distancias utilizando o código morse.
+		Na Década de 1950 periodo da Guerra Fria foram desenvolvidas as redes de computadores
+		Destaques das primeiras Redes:
+		DARPA
+		ARPANET.
+	</p>
+	<p>
+		As primeiras redes eram apenas de uso milita e cientifico.
+		Com a criação do Protocolo TCP/IP as redes tornaram-se mais robostas
+		Em 1989, Tim Berners-Lee Cria a World Wide Web.
+		Unindo a tecnologia do TCP/IP com a Linguagem de marcação de texto (HTML)
+	</p>
+	<h3 id="clients">O que são Clients</h3>
+	<small><a href="#inicio">Voltar</a></small>
+	<h4>Cliente no liguajar Web</h4>
+	<p>
+		Cliente é o dispositivo que requisita, recebe e 
+		consome informações da internet.
+		Exemplo computador(Cliente) requisita atraves da conexão
+		com a internet informações que estão em outro computador(Servidor)
+		que recebe a requisição e envia a informação que foi pedidam, assim o cliente é o computador que requisita e recebe a informação.
+	<p>
+		Mas o que tipo de arquivo é tranferido nessa comunicação?
+		Necessariamente são arquivos html, css, javascript, imagens
+		tudo que compoe uma pagina web.
+	</p>
+		Os navegadores possuem um recurso chamado de cache, que guarda
+		arquivos dos sites visitados. Para que se as paginas requisitas não tiverem
+		mudança ele não requita os arquivo novamente, assim poupando recursos.
+	<p>
+	<h4>Navegadores</h4>
+	<p>
+		São programas que interpretam os arquivos que são recebidos do 
+		servidor web (hmtl, css, javascript etc).
+		Os navegadores são desenvolvidos seguindo os padrões W3C, grupo 
+		responsavel por padronizar as metricas dos navegadores de internet.
+		Os navegadores também são conhecidos como browsers.
+	</p>
+	<h4>Aplicações Web</h4>
+	<p>
+		Aplicações web são programas que podem ser acessados on-line
+		não sendo nessaria a sua instalação localmente.
+	</p>
+	<h4>Dispositivos Móveis</h4>
+	<p>
+		Atualmente há uma variedade de dispositivos Móveis, exemplo:
+		smartphones, tablets, notebooks e etc. Os dispositivos moveis 
+		são reponsaveis pelo maior trafego de dados na internet.
+	</p>
+	<h3 id="servers">O que são Servers?</h3>
+	<small><a href="#inicio">Voltar</a></small>
+	<h4>Sobre Servidores</h4>
+	<p>
+		Os servidores são computadores responsaveis por responder 
+		as requisições dos computadores clientes, enviado de si os 
+		arquivos que foram requisitados.
+	</p>
+	<p>
+		São computadores de configuração mais robustas, pois servi 
+		a varios computadores.
+	</p>
+	<p>
+		Há vários tipos de servidores, como por exemplo,
+		servidor de arquivos, servidor de e-mail, servidor Web e etc.
+	</p>
+
+	<h4>Hardwares e Sofwares em Servidores</h4>
+	<p>
+		Como todos os computadores os servidores possuiem Hardwares (Parte fisica) e sofwares (Parte Lógica).
+		Os servidores possuem Sistema Operacional desenvolvido especificamente para eles. Exemplos de SO para Servidores:
+		Windows Server, Ubuntu, Debian, Fedora e Oracle.
+	</p>
+	<p>
+		Para atender as requisições feitas ao Servidor, há os Servidores Web, exemplo: Apache e Nginx.
+	</p>
+	<p>
+		Quando um computador client envia uma requição para um Servidor, essa requesição é recebida pelo Sistema Operacional do Servidor e é repassada para software de Servidor Web para ser processada.
+	</p>
+	<h4>Tipos de Servidores</h4>
+	<ul>
+		<li>Arquivos - Serve arquivos para rede.</li>
+		<li>Segurança(Firewall) - Um Sofware que é uma barreira de configurações de segunça para evitar acesso exterior a rede.</li>
+		<li>E-mail - armazena e gerencia envio e recebimento de e-mails
+		Web - Serve paginas Web.
+		</li>
+		<li>Database Serve - Contém um banco dados.</li>
+		<li>Proxy - Defina Regras de acesso quanto sites.</li>
+		<li>Servidor Web sem internet - Servi paginas web apenas dentro da rede (intranet).
+		</li>
+		<li>DNS (Domain Name Service) - Faz a conversão do número de endereço ip onde estão hospedos sites para forma de endereço composto por letras facilitando a leitura dos endereços, exemplo: web.dio.me.
+		</li>
+	</ul>
+	<h4>Hospedagem de Sites</h4>
+	<p>Colocar os arquivos do site em um servidor, pode ser configurado ou contratado. Ao colocar (subir/upload) dos arquivos para o servidor e devidamente configurado o endereço ficara disponivel para acesso.</p>
+	<h3 id="linguagens">Linguagens de Programação</h3>
+	<small><a href="#inicio">Voltar</a></small>
+	<h4>O que é?</h4>
+	<p>
+		É uma liguagem desenvolvida para facilitar a produção desoftware
+	</p>
+	<h4>Server-Side</h4>
+	<p>
+		As linguagens Server-Side são linguagens de programação de softwares voltada para os servidores. Exemplo de linguagens:
+		PHP, Ruby, C#, Javascript e Java.
+	</p>
+	<h4>Client-Side</h4>
+	<p>
+		As linguagem Client-Side são liguagens que são execultadas no computador cliente. Exemplo de linguagem Clint-Side:
+		Javascript
+	</p>
+	<h4>HTML não é Linguagem de Programação</h4>
+	<p>
+		HTML(Hyper text Markup Language) é uma linguagem de marcação de texto.
+		É um arquivo de marcação. O texto é marcado com delimitadores e cada delimitador tem uma função especifica.
+		Os navegadores interpreta os delimitados e exibe o texto com a formatação indicada nos delimitadores.
+	</p>
+	<h2>Introdução ao HTML na Prática</h2>
+	<h4 id="ferramentas">Ferramentas Utilizadas</h4>
+	<small><a href="#inicio">Voltar</a></small>
+	<ul>
+		<li>Visual Studio Code (Pode ser Baixado Gratuitamente)</li>
+		<li>Note Pad++ (Pode ser Baixado Gratuitamente)</li>
+		<li>Sublime Text (Pode ser Baixado Gratuitamente)</li>
+	</ul>
+	<p>
+		O Visual Studio Code possui extensões que são plugins que almentam suas capacidades.
+		Exemplo de extensão: Live Server, Emmet(Cria Estrutura Básica de uma 	pagina HTML)
+	</p>
+	<h4 id="inspetor">Inspetor de Elementos</h4>
+	<small><a href="#inicio">Voltar</a></small>
+	<p>
+		É uma ferramenta disponivel no navegador direcionada para desenvolvedores. No Chrome ir no menu (3 pontinhos canto superior direito)> Mais Ferramentas > Ferramentas do desenvolvedor. Esta Ferramenta disponibiliza varias funções que podem auxiliar o desenvolvendo na hora de construtruir ou analizar o codigo de uma pagina HTML.
+	</p>
+	<h4 id="estrutura">Estrutura Básica do HTML</h4>
+	<small><a href="#inicio">Voltar</a></small>
+	<p>
+		O código HTML é composto por textos e delimitadores chamados tags.
+		Em um arquivo HTML as tags html delimitão todo o código, ou seja, todas as outra tags do html devem estar contidas entre os delimitados <html>(delimitador de abertura da tag) e </html>(delimitador de fechamento da tag).
+	</p>
+	<p>
+		A estrutura de uma página divide-se em head e body.
+		No head ficam informações que são pré-carregadas antes da exibição da página.
+		No body fica o conteúdo que será exibido ao usuário.
+	</p>
+	
+		
+			&lthtml&gt <br>
+		 		&lthead&gt <br>
+		  			&lttitle> Minha Página &lt/title&gt <br>
+		 		&lthead&gt <br>
+		 		&ltbody&gt <br>
+		 			Meu HTML <br>
+				&ltbody&gt <br>
+			&lthtml&gt
+		
+	
+	<h4 id="tags">Falando Sobre Tags</h4>
+	<small><a href="#inicio">Voltar</a></small>
+	<p>
+		Há uma enorme váriedade de tags no HTML cada uma com sua função especifica. Todo o contéudo que fica dentro dos delimitadores de abertura e fechamento da tag se comporta conforme a função da tag.
+	</p>
+ 	<p>
+ 		Exemplos de tags: &lt;i&gt;Este texto fica itálico ao ser mostrado em um navegador&lt;/i&gt;
+ 	</p>
+ 	<p>
+ 		Há algumas tags que não possuem fechamento &lt;/&gt; essas tags
+		possuem barra no final.  Exemplo de tag sem fechamento: <br> 
+		&lt;img/&gt;
+		&lt;input/&gt;
+ 	</p>
+ 	<h4 id="atributos">Atributos das Tags</h4>
+	 <small><a href="#inicio">Voltar</a></small>
+ 	<p>
+ 		Atributos são propriedades que as tags possuem que podem ser alteradas para se ajustar e ou modificar o comportamento do elemento HTML. Há atributos que são genericos outros são especificos de uma tag.
+ 	</p>
+ 	<p>
+		Exemplo de tag com atributos:
+		&lt;strong style="color:blue"&gt;
+			Este texto fica azul no navegador
+		&lt;/strong&gt;
+ 	</p>
+ 	<h4 id="textos">Textos</h4>
+	 <small><a href="#inicio">Voltar</a></small>
+ 	<p>
+ 		Há várias tags que tem como função formatar o texto.
+		a tag &lth1&gt &lt/h1&gt por exemplo ao delimiatar um texto destaca que esse texto deve ser tratado com um titulo. As tags de titulos são: h1, h2, h3, h4, h5 e h6. Quando maior o número menor será mostrado o Título.
+ 	</p>
+ 	<p>A tag &lt;p&gt;&lt;/p&gt; delimita um paragrafo.</p>
+ 	<p>A tag &lt;blockquote&gt;&lt;/blockquote&gt; delimita uma citação longa.</p>
+ 	<p>A tag &lt;u&gt;&lt;/u&gt; é usada para que o texto fique sublinhado.</p>
+ 	<p>A tag &lt;i&gt;&lt;/i&gt; torna o texto itálico.</p>
+ 	<p>Para Marcar um texto usar-se a tag &lt;mark&gt;&lt;/mark&gt;.</p>
+ 	<p>Para elevar um caractere usar-se a tag &lt;sup&gt;&lt;/sup&gt;.</p>
+
+ 	<h4 id="listas">Lista Ordenadas e Não Ordenadas</h4>
+	 <small><a href="#inicio">Voltar</a></small>
+ 	<p>Para criar uma lista ordenada usa-se a tag &lt;ol&gt;&lt;/ol&gt;.</p>
+ 	<p>Para criar uma lista não ordenada usa-se a tag &lt;ul&gt;&lt;/ol&gt;.</p>
+ 	<p>
+ 		As tags de criação de listas são usadas em cojunto com as tags de listagem dos item da lista &lt;li&gt;&lt;/li&gt; tendo uma relação hierarcca as tags li ficam dentro da delimitação das tags ol, sendo chamadas de tags filhas, sendo assim a tag ol ou ul sendo consideradas as tags pais.
+	</p>
+	<p>
+		Exemplo: <br>
+		&lt;ol&gt <br>
+		 &lt;li&gtitem 1&lt;/li&gt <br>
+		 &lt;li&gtitem 2&lt;/li&gt <br>
+		&lt;/ol&gt <br>
+
+		&lt;ul&gt <br>
+		 &lt;li&gtitem 1&lt;/li&gt <br>
+		 &lt;li&gtitem 2&lt;/li&gt <br> 
+		&lt;/ul&gt <br>
+	</p>
+
+	<h4 id="links">Links</h4>
+	<small><a href="#inicio">Voltar</a></small>
+	<p>
+		Para criar hiperlinks ou links usamos a tag <a></a>, quando se liga uma pagina a outra diz-se que uma página está ancorada a outra, daí a tag de link ser representada por uma letra "a". O link pode levar para outro lugar na mesma página.
+	</p>
+	<p>Exemplo de aplicação da tag <a></a>:</p>
+	<p>
+		&lt;a&gt; href="http//dio.me" title="Clique aqui e confira" target="_blank" >Dio.me&lt;a&gt;
+	</p>
+	<p>O atributo href define o endereço para onde o link aponta.</p>
+	<p>	O atributo target pode ser usado para definir se a pagina destino será aberta em uma nova aba.</p>
+	<p>O atributo title define um balão que abre com uma mensgem ao se passar o ponteiro do mouse por cima do link.
+	</p>
+
+
+
+</body>
+</html>
